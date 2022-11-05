@@ -1,0 +1,115 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Agent Profile </title>
+
+
+        <!-- Bootstrap core CSS -->
+        <link
+            href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <meta name="theme-color" content="#7952b3">
+
+        <script
+            src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+        <!-- Custom styles for this template -->
+        <link href="../public/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <header class="navbar navbar-dark sticky-top bg-light flex-md-nowrap p-0
+            shadow">
+            <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Header</a>
+            <button class="navbar-toggler position-absolute d-md-none collapsed"
+                type="button" data-bs-toggle="collapse"
+                data-bs-target="#sidebarMenu" aria-controls="sidebarMenu"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row">
+                <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block
+                    bg-light sidebar collapse">
+                    <div class="position-sticky pt-3">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://localhost:4000/agentprofile">
+                                    Agent Profile
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://localhost:4000/studentprofile">
+                                    Student Profile
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://localhost:4000/status">
+                                    Status
+                                </a>
+                            </li>
+                        </div>
+                    </nav>
+
+                    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                        <div class="d-flex justify-content-between flex-wrap
+                            flex-md-nowrap align-items-center pt-3 pb-2 mb-3
+                            border-bottom">
+                            <h1 class="h2">Agent Profile</h1>
+                        </div>
+
+                        <form class="row g-3" action="/agentprofile" method="POST">
+                        
+                            <div class="col-6">
+                                <div class="col-12 mb-3">
+                                    <input type="text" class="form-control"
+                                        placeholder="Name" name="name" required>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <input type="text" class="form-control"
+                                        placeholder="Place" name="place" required>
+                                </div>
+                                <div class="col-12 mb-3">
+
+                                    <input type="text" class="form-control"
+                                        placeholder="Mobile Number" name="mobile_number" required>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <input type="email" class="form-control"
+                                        placeholder="Email" name="email" required>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <input type="text" class="form-control"
+                                        placeholder="Bank Account Detail" name="bank_detail" required>
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <button type="submit" class="btn
+                                        btn-primary" value="agentprofile">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </main>
+                </div>
+            </div>
+        </body>
+    </html>
